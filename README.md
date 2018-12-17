@@ -10,12 +10,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 Start of by cloning the repository locally:
 ```
-git clone https://github.com/PabiGamito/react-gh-pages.git
+git clone https://github.com/ILYMUN/website.git
+```
+or
+```
+git clone git@github.com:ILYMUN/website.git
 ```
 
 Then enter the cloned directory
 ```
-cd react-gh-pages
+cd website
 ```
 and run
 ```
@@ -52,7 +56,7 @@ The build is minified and the filenames include the hashes.<br>
 
 The built app is then deployed to GitHub pages.
 
-You can then visit the live version of the app at [https://pabigamito.github.io/react-gh-pages/](https://pabigamito.github.io/react-gh-pages/)
+You can then visit the live version of the app at [https://ILYMUN.github.io/website/](https://ILYMUN.github.io/website/).
 
 ## Testing
 
