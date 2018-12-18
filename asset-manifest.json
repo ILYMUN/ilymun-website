@@ -1,14 +1,14 @@
 {
-  "main.css": "/static/css/main.40d72e60.chunk.css",
-  "main.js": "/static/js/main.0075efed.chunk.js",
-  "main.js.map": "/static/js/main.0075efed.chunk.js.map",
-  "static/js/1.82dafdb5.chunk.js": "/static/js/1.82dafdb5.chunk.js",
-  "static/js/1.82dafdb5.chunk.js.map": "/static/js/1.82dafdb5.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
-  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
-  "static/css/main.40d72e60.chunk.css.map": "/static/css/main.40d72e60.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.1e0e1242ec79d9b8e134ad9e741841a8.js": "/precache-manifest.1e0e1242ec79d9b8e134ad9e741841a8.js",
-  "service-worker.js": "/service-worker.js"
+  "main.css": "/ilymun-website/static/css/main.40d72e60.chunk.css",
+  "main.js": "/ilymun-website/static/js/main.9b5161b9.chunk.js",
+  "main.js.map": "/ilymun-website/static/js/main.9b5161b9.chunk.js.map",
+  "static/js/1.82dafdb5.chunk.js": "/ilymun-website/static/js/1.82dafdb5.chunk.js",
+  "static/js/1.82dafdb5.chunk.js.map": "/ilymun-website/static/js/1.82dafdb5.chunk.js.map",
+  "runtime~main.js": "/ilymun-website/static/js/runtime~main.7aefaa7e.js",
+  "runtime~main.js.map": "/ilymun-website/static/js/runtime~main.7aefaa7e.js.map",
+  "static/media/logo.svg": "/ilymun-website/static/media/logo.5d5d9eef.svg",
+  "static/css/main.40d72e60.chunk.css.map": "/ilymun-website/static/css/main.40d72e60.chunk.css.map",
+  "index.html": "/ilymun-website/index.html",
+  "precache-manifest.792cc33f8233a4337b5637b8c35243ab.js": "/ilymun-website/precache-manifest.792cc33f8233a4337b5637b8c35243ab.js",
+  "service-worker.js": "/ilymun-website/service-worker.js"
 }
