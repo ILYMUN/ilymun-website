@@ -69,7 +69,9 @@ export class LandingPress extends Component {
                     {childElements}
                   </Masonry>
                   <br />
+                  <a href="https://www.facebook.com/pg/internationallyonmun/photos/">
                   <button class="button" onclick="location.href='/media/';">Checkout more Photogrpahy</button>
+                  </a>
                 </div>
             </div>
             <div class="bottom-angle"></div>
