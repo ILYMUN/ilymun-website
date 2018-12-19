@@ -4,7 +4,7 @@ export class Contact extends Component {
   render() {
     const contact =
       <section id="contact-us">
-        <div class="white-bg angular section-padding">
+        <div class="white-bg angular last section-padding">
           <div class="top-angle"></div>
           <div class="container">
             <div class="section-head"> { /* TODO: add back: appear slide-right*/}

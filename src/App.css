@@ -110,6 +110,9 @@ li {
   position: relative;
   z-index: 0;
 }
+.white-bg.angular.last {
+  margin-bottom: 0;
+}
 .white-bg.angular {
   margin-bottom: 170px;
 }
