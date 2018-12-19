@@ -48,7 +48,7 @@ export class LandingTeam extends Component {
                     <p>Line Teixeira</p>
                   </div>
                   <div class="col-md-4 col-sm-4">
-                    <LazyLoad>
+                    <LazyLoad height={200}>
                       <img src={require("./images/team/matthieu.jpg")} />
                     </LazyLoad>
                     <p>Matthieu Contamin</p>

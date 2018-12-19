@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
 import LazyLoad from 'react-lazyload';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 export class LandingPartners extends Component {
   render() {
@@ -18,7 +21,12 @@ export class LandingPartners extends Component {
                 </div><br />
               </div>
               <div class="section-content" style={{marginBottom: '100px'}}>
-                <div id="partners-slider">
+                <OwlCarousel
+                  className="partners-slider"
+                  loop
+                  margin={10}
+                  nav
+                >
                   <div><a href='https://www.boehringer-ingelheim.com/'><LazyLoad><img src={require('./images/partners/1.png')} /></LazyLoad></a></div>
                   <div><a href='http://www.media6.com/en/'><LazyLoad><img src={require('./images/partners/2.png')} /></LazyLoad></a></div>
                   <div><a href=' http://www.risofrance.fr/accueil.html'><LazyLoad><img src={require('./images/partners/3.png')} /></LazyLoad></a></div>
@@ -26,7 +34,16 @@ export class LandingPartners extends Component {
                   <div><a href='http://www.intonations.com/'><LazyLoad><img src={require('./images/partners/5.png')} /></LazyLoad></a></div>
                   <div><a href='http://www.mri-relocation.com/'><LazyLoad><img src={require('./images/partners/6.png')} /></LazyLoad></a></div>
                   <div><a href='https://csianglo.org/'><LazyLoad><img src={require('./images/partners/7.png')} /></LazyLoad></a></div>
-                </div>
+                </OwlCarousel>
+                {/* <div id="partners-slider">
+                  <div><a href='https://www.boehringer-ingelheim.com/'><LazyLoad><img src={require('./images/partners/1.png')} /></LazyLoad></a></div>
+                  <div><a href='http://www.media6.com/en/'><LazyLoad><img src={require('./images/partners/2.png')} /></LazyLoad></a></div>
+                  <div><a href=' http://www.risofrance.fr/accueil.html'><LazyLoad><img src={require('./images/partners/3.png')} /></LazyLoad></a></div>
+                  <div><LazyLoad><img src={require('./images/partners/4.png')} /></LazyLoad></div>
+                  <div><a href='http://www.intonations.com/'><LazyLoad><img src={require('./images/partners/5.png')} /></LazyLoad></a></div>
+                  <div><a href='http://www.mri-relocation.com/'><LazyLoad><img src={require('./images/partners/6.png')} /></LazyLoad></a></div>
+                  <div><a href='https://csianglo.org/'><LazyLoad><img src={require('./images/partners/7.png')} /></LazyLoad></a></div>
+                </div> */}
               </div>
             </div>
           </div>

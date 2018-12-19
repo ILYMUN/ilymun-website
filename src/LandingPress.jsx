@@ -5,27 +5,15 @@ import Masonry from 'react-masonry-component';
 // import './wp-content/themes/ilymun-wp-theme/js/imagesloaded.pkgd.min.js';
 
 const masonryOptions = {
-  transitionDuration: 0
+  transitionDuration: 0,
+  itemSelector: '.masonryImage',
+  columnWidth: '.masonryImage',
+  percentPosition: true
 };
 
 const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 export class LandingPress extends Component {
-  componentDidMount() {
-    // let imageMasonry = $('.masonry');
-
-    // imageMasonry.imagesLoaded()
-    //   .done(function() {
-    //     imageMasonry.masonry({
-    //       itemSelector: '.masonryImage',
-    //       columnWidth: '.masonryImage',
-    //       percentPosition: true
-    //     });
-    //   });
-    // $(window).resize(function() {
-    //   imageMasonry.masonry('reloadItems');
-    // });
-  }
 
   render() {
     const childElements = [
@@ -46,9 +34,9 @@ export class LandingPress extends Component {
       "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/14.jpg",
     ].map(function(src){
       return (
-        <li className="image-element-class">
+        <div className="masonryImage col-md-3 col-sm-4 col-xs-6">
           <img src={src} />
-        </li>
+        </div>
        );
       });
 
@@ -72,8 +60,8 @@ export class LandingPress extends Component {
                   <h3>Photos</h3>
 
                   <Masonry
-                    className={'gallary-snippet'} // default ''
-                    elementType={'ul'} // default 'div'
+                    className={'masonry row'} // default ''
+                    elementType={'div'} // default 'div'
                     options={masonryOptions} // default {}
                     disableImagesLoaded={false} // default false
                     updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
@@ -81,6 +69,7 @@ export class LandingPress extends Component {
                   >
                     {childElements}
                   </Masonry>
+                  <br />
                   <button class="button" onclick="location.href='/media/';">Checkout more Photogrpahy</button>
                 </div>
             </div>
