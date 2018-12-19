@@ -428,4 +428,6 @@ $window.trigger('scroll');
     }
 })(jQuery);
 
-$('.countdown').final_countdown();
+$(document).ready(function() {
+    $('.countdown').final_countdown();
+});

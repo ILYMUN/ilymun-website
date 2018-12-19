@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 
 export class CountDownParallax extends Component {
   render() {
+    const eventTime = Date.UTC(2019, 1, 24, 1, 0, 0) / 1000;
+
     const countdown =
       <section class="parallax count-down">
         <div class="parallax-window dotted-overlay" data-parallax="scroll" data-image-src="./wp-content/themes/ilymun-wp-theme/images/parallax/count-down.jpg">
@@ -9,8 +11,8 @@ export class CountDownParallax extends Component {
             <div class="content">
               <h3>Time Until Next Event</h3>
               <div class="countdown countdown-container container"
-              data-end="1548338400"
-              data-now={new Date().getTime().toString()}
+              data-end={eventTime.toString()}
+              data-now={(new Date().getTime() / 1000).toString()}
               data-border-color="rgba(255, 255, 255, .8)">
                 <div class="clock row">
                   <div class="clock-item clock-days countdown-time-value col-sm-3 col-md-3">
