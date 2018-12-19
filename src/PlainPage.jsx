@@ -6,13 +6,15 @@ import {Footer} from './Footer.jsx';
 
 export class PlainPage extends Component {
   render() {
+    const title = this.props.title == undefined ? "" : <h1 class="title">{this.props.title}</h1>
+
     const plainPage =
       <div class="plainPage">
         <Navbar/>
 
         <div class="container" style={{marginBottom: '100px'}}>
-          <h1 class="title">Title</h1>
-          Content
+          {title}
+          {this.props.children}
         </div>
 
         <Footer />
