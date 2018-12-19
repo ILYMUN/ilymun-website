@@ -1,14 +1,64 @@
 import React, {Component} from 'react';
+import Masonry from 'react-masonry-component';
+
+// import './wp-content/themes/ilymun-wp-theme/js/masonry.pkgd.min.js';
+// import './wp-content/themes/ilymun-wp-theme/js/imagesloaded.pkgd.min.js';
+
+const masonryOptions = {
+  transitionDuration: 0
+};
+
+const imagesLoadedOptions = { background: '.my-bg-image-el' }
 
 export class LandingPress extends Component {
+  componentDidMount() {
+    // let imageMasonry = $('.masonry');
+
+    // imageMasonry.imagesLoaded()
+    //   .done(function() {
+    //     imageMasonry.masonry({
+    //       itemSelector: '.masonryImage',
+    //       columnWidth: '.masonryImage',
+    //       percentPosition: true
+    //     });
+    //   });
+    // $(window).resize(function() {
+    //   imageMasonry.masonry('reloadItems');
+    // });
+  }
+
   render() {
+    const childElements = [
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/0.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/1.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/2.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/3.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/4.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/5.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/6.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/7.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/8.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/9.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/10.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/11.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/12.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/13.jpg",
+      "./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/14.jpg",
+    ].map(function(src){
+      return (
+        <li className="image-element-class">
+          <img src={src} />
+        </li>
+       );
+      });
+
     const press =
     <section id="press">
       <div>
         <div class="gray-bg angular section-padding">
           <div class="top-angle"></div>
             <div class="container">
-                <div class="section-head appear slide-right">
+                <div class="section-head"> {/* TODO: Add back: appear slide-right*/}
                   <h2 class="section-title">Press</h2>
                   <p class="section-description">
                       A peak at what ILYMUN is all about. Read from hundreds of articles and take a look at our photo gallery to learn more about what is going on with ILYMUN.
@@ -21,54 +71,16 @@ export class LandingPress extends Component {
                 <div class="col-md-12" style={{textAlign: 'center', marginBottom: '75px'}}>
                   <h3>Photos</h3>
 
-                  <div class="masonry row" style={{marginBottom: '15px'}}>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/0.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/1.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/2.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/3.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/4.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/5.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/6.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/7.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/8.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/9.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/10.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/11.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/12.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/13.jpg" alt="" class="img-responsive" />
-                    </div>
-                    <div class="masonryImage col-md-3 col-sm-4 col-xs-6" style={{padding: '0 !important', margin: '0 !important'}}>
-                      <img src="./wp-content/themes/ilymun-wp-theme/images/gallery/sample/optimized/14.jpg" alt="" class="img-responsive" />
-                    </div>
-                  </div>
-
+                  <Masonry
+                    className={'gallary-snippet'} // default ''
+                    elementType={'ul'} // default 'div'
+                    options={masonryOptions} // default {}
+                    disableImagesLoaded={false} // default false
+                    updateOnEachImageLoad={false} // default false and works only if disableImagesLoaded is false
+                    imagesLoadedOptions={imagesLoadedOptions} // default {}
+                  >
+                    {childElements}
+                  </Masonry>
                   <button class="button" onclick="location.href='/media/';">Checkout more Photogrpahy</button>
                 </div>
             </div>

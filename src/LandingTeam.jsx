@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import LazyLoad from 'react-lazyload';
 
 export class LandingTeam extends Component {
   render () {
@@ -17,27 +18,39 @@ export class LandingTeam extends Component {
               <div class="section-content">
                 <div class="row">
                   <div class="col-md-4 col-sm-4">
-                    <img class="lazy" data-original={require("./images/team/estee.jpg")} />
+                    <LazyLoad>
+                      <img src={require("./images/team/estee.jpg")} />
+                    </LazyLoad>
                     <p>Estée Poichot</p>
                   </div>
                   <div class="col-md-4 col-sm-4">
-                    <img class="lazy" data-original={require("./images/team/justine.jpg")} />
+                    <LazyLoad>
+                      <img src={require("./images/team/justine.jpg")} />
+                    </LazyLoad>
                     <p>Justine Seguin</p>
                   </div>
                   <div class="col-md-4 col-sm-4">
-                    <img class="lazy" data-original={require("./images/team/david.jpg")} />
+                    <LazyLoad>
+                      <img src={require("./images/team/david.jpg")} />
+                    </LazyLoad>
                     <p>David Genaro Garcia</p>
                   </div>
                   <div class="col-md-4 col-sm-4">
-                    <img class="lazy" data-original={require("./images/team/remi.jpg")} />
+                    <LazyLoad>
+                      <img src={require("./images/team/remi.jpg")} />
+                    </LazyLoad>
                     <p>Rémi Fodor</p>
                   </div>
                   <div class="col-md-4 col-sm-4">
-                    <img class="lazy" data-original={require("./images/team/line.jpg")} />
+                    <LazyLoad>
+                      <img src={require("./images/team/line.jpg")} />
+                    </LazyLoad>
                     <p>Line Teixeira</p>
                   </div>
                   <div class="col-md-4 col-sm-4">
-                    <img class="lazy" data-original={require("./images/team/matthieu.jpg")} />
+                    <LazyLoad>
+                      <img src={require("./images/team/matthieu.jpg")} />
+                    </LazyLoad>
                     <p>Matthieu Contamin</p>
                   </div>
                 </div>
