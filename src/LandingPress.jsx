@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import Masonry from 'react-masonry-component';
 
-// import './wp-content/themes/ilymun-wp-theme/js/masonry.pkgd.min.js';
-// import './wp-content/themes/ilymun-wp-theme/js/imagesloaded.pkgd.min.js';
-
 const masonryOptions = {
   transitionDuration: 0,
   itemSelector: '.masonryImage',
@@ -54,7 +51,9 @@ export class LandingPress extends Component {
                 </div>
                 <div class="col-md-12" style={{textAlign: 'center', marginTop: '-100px', marginBottom: '30px'}}>
                   <h3>Latest Articles</h3>
-                  <button class="button" onclick="location.href='/articles/';">Checkout Our Articles</button>
+                  <a href='https://medium.com/ilymun'>
+                  <button class="button">Checkout Our Articles</button>
+                  </a>
                 </div>
                 <div class="col-md-12" style={{textAlign: 'center', marginBottom: '75px'}}>
                   <h3>Photos</h3>
