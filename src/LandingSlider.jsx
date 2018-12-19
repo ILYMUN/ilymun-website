@@ -2,25 +2,6 @@ import React, {Component} from 'react';
 
 export class LandingSlider extends Component {
   render () {
-    // TODO: Add missing dependencies
-    {/* <!-- <link rel="stylesheet" type="text/css" href="assets/revolution/noneed.css"> --> */}
-    {/* <!-- REVOLUTION JS FILES --> */}
-    {/* <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/revolution/jquery.themepunch.tools.min.js"></script> */}
-    {/* <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/revolution/jquery.themepunch.revolution.min.js"></script> */}
-
-    {/* <!-- SLIDER REVOLUTION 5.0 EXTENSIONS
-      (Load Extensions only on Local File Systems !
-      The following part can be removed on Server for On Demand Loading) --> */}
-    {/* <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/revolution/extensions/revolution.extension.actions.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/revolution/extensions/revolution.extension.carousel.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/revolution/extensions/revolution.extension.kenburn.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/revolution/extensions/revolution.extension.layeranimation.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/revolution/extensions/revolution.extension.migration.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/revolution/extensions/revolution.extension.navigation.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/revolution/extensions/revolution.extension.parallax.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/revolution/extensions/revolution.extension.slideanims.min.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/js/revolution/extensions/revolution.extension.video.min.js"></script> */}
-
     const LandingSlider = 
       <section id="main-slider">
         <article class="content">
@@ -28,7 +9,7 @@ export class LandingSlider extends Component {
             <div id="rev_slider_20_1" class="rev_slider fullwidthabanner" style={{display: 'none'}} data-version="5.0.7">
               <ul>
                 <li data-index="rs-68" data-transition="zoomout" data-slotamount="default"  data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-rotate="0"  data-saveperformance="off"  data-title="Intro" data-description="">
-                  <img src="<?php echo get_template_directory_uri() ?>/images/index-slider.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina />
+                  <img src="./wp-content/themes/ilymun-wp-theme/images/index-slider.jpg"  alt=""  data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina />
 
                   <div class="tp-caption tp-shape tp-shapewrapper   rs-parallaxlevel-0"
                     id="slide-68-layer-10"

@@ -4,13 +4,13 @@ export class CountDownParallax extends Component {
   render() {
     const countdown =
       <section class="parallax count-down">
-        <div class="parallax-window dotted-overlay" data-parallax="scroll" data-image-src="<?php echo get_template_directory_uri() ?>/images/parallax/count-down.jpg">
+        <div class="parallax-window dotted-overlay" data-parallax="scroll" data-image-src="./wp-content/themes/ilymun-wp-theme/images/parallax/count-down.jpg">
           <div class="container" style={{marginTop: '100px'}}>
             <div class="content">
               <h3>Time Until Next Event</h3>
               <div class="countdown countdown-container container"
               data-end="1548338400"
-              data-now="<?php echo time(); ?>"
+              data-now={new Date().getTime().toString()}
               data-border-color="rgba(255, 255, 255, .8)">
                 <div class="clock row">
                   <div class="clock-item clock-days countdown-time-value col-sm-3 col-md-3">
