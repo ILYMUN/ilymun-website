@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-
-// import './lib/owl.carousel.css';
-// import './lib/owl.transitions.css';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 export class LandingQuotes extends Component {
   constructor(props) {
@@ -17,21 +17,43 @@ export class LandingQuotes extends Component {
               <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12"> {/*TODO: Add back: appear bounce-up*/}
                 <h2 class="lg-title text-center"><span>What People Say about ILYMUN?</span></h2>
-                <div id="people-slider" style={{height: '100px'}}> {
+
+                <OwlCarousel
+                  className="quotes-slider"
+                  loop
+                  margin={10}
+                  // nav
+                  items={1}
+                  autoplay
+                  autoplayTimeout={8000}
+                  autoplayHoverPause
+                  autoHeight
+                  animateOut={'fadeOut'}
+                  dots
+                >
+                  {this.props.quotes.map(q => 
+                    <div class="item">
+                      <h3>"{q.quote}"</h3>
+                      <h4>- {q.author}</h4>
+                    </div>
+                  )}
+                </OwlCarousel>
+
+                {/* <div id="people-slider" style={{height: '100px'}}> {
                   this.props.quotes.map(q => 
                     <div class="owl-item">
                       <h3>"{q.quote}"</h3>
                       <h4>- {q.author}</h4>
                     </div>
                   )
-                } </div>
-                <div id="customDots" class="owl-dots">
+                } </div> */}
+                {/* <div id="customDots" class="owl-dots">
                   <i class="fa fa-circle owl-dot active" goto="0"></i>
                   <i class="fa fa-circle owl-dot" goto="1"></i>
                   <i class="fa fa-circle owl-dot" goto="2"></i>
                   <i class="fa fa-circle owl-dot" goto="3"></i>
                   <i class="fa fa-circle owl-dot" goto="4"></i>
-                </div>
+                </div> */}
               </div>
               </div>
               <div class="section-content">

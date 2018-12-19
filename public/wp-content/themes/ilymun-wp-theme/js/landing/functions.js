@@ -16,25 +16,25 @@ $(document).ready(function() {
     });
 });
 
-$('#partners-slider').owlCarousel({
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 2000,
-    margin: 10,
-    responsive: {
-        0: {
-            items: 3
-        },
-        768: {
-            items: 4,
-            autoPlay: 5000
-        },
-        992: {
-            items: 7,
-            autoplay: false
-        }
-    }
-})
+// $('#partners-slider').owlCarousel({
+//     loop: true,
+//     autoplay: true,
+//     autoplayTimeout: 2000,
+//     margin: 10,
+//     responsive: {
+//         0: {
+//             items: 3
+//         },
+//         768: {
+//             items: 4,
+//             autoPlay: 5000
+//         },
+//         992: {
+//             items: 7,
+//             autoplay: false
+//         }
+//     }
+// })
 // $(document).ready(function() {
 
 //   $("#slider").owlCarousel({

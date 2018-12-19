@@ -23,9 +23,23 @@ export class LandingPartners extends Component {
               <div class="section-content" style={{marginBottom: '100px'}}>
                 <OwlCarousel
                   className="partners-slider"
-                  loop
+                  loop={true}
                   margin={10}
-                  nav
+                  autoplay={true}
+                  nav={true}
+                  responsive={{
+                    0: {
+                      items: 3
+                    },
+                    768: {
+                        items: 4,
+                        autoPlay: 5000
+                    },
+                    992: {
+                        items: 7,
+                        autoplay: false
+                    }
+                  }}
                 >
                   <div><a href='https://www.boehringer-ingelheim.com/'><LazyLoad><img src={require('./images/partners/1.png')} /></LazyLoad></a></div>
                   <div><a href='http://www.media6.com/en/'><LazyLoad><img src={require('./images/partners/2.png')} /></LazyLoad></a></div>
