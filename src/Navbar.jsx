@@ -3,9 +3,15 @@ import './App.css';
 import './Navbar.css';
 
 export class Navbar extends Component {
-  // <div id="loader-wrapper">
-  //     <div id="loader"></div>
-  // </div>
+  resize = () => this.forceUpdate()
+
+  componentDidMount() {
+    window.addEventListener('resize', this.resize)
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.resize)
+  }
 
   render() {
     return (
