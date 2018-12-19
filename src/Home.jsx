@@ -10,40 +10,29 @@ import {LandingPress} from './LandingPress';
 import {LandingPartners} from './LandingPartners';
 import {Contact} from './Contact';
 
-// import './lib/revolution/css/settings.css';
-// import './lib/revolution/css/layers.css';
-// import './lib/revolution/css/navigation.css';
-
-// import './lib/jquery.themepunch.tools.min.js';
-// import './lib/revolution/jquery.themepunch.revolution.min.js';
+import {Navbar} from './Navbar.jsx';
+import {Footer} from './Footer.jsx';
 
 export class Home extends Component {
   render () {
     const home = 
-      <div id="content" class="site-content">
-
-        <LandingSlider />
-
-        <LandingAbout />
-
-        <LandingParallax />
-
-        <LandingValues />
-
-        <LandingTeam />
-
-        <CountDownParallax />
-
-        <LandingQuotes />
-
-        <LandingPress />
-
-        <LandingPartners />
-
-        <Contact />
-
-        <section id="map" style={{width: '100%', height: '500px'}}></section>
-
+      <div id="home">
+        <Navbar landing/>
+        
+        <div id="content" class="site-content">
+          <LandingSlider />
+          <LandingAbout />
+          <LandingParallax />
+          <LandingValues />
+          <LandingTeam />
+          <CountDownParallax />
+          <LandingQuotes />
+          <LandingPress />
+          <LandingPartners />
+          <Contact />
+          <section id="map" style={{width: '100%', height: '500px'}}></section>
+        </div>
+        <Footer />
       </div>
 
     return home;
