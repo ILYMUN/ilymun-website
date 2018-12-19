@@ -16,6 +16,11 @@ $(document).ready(function() {
     });
 });
 
+
+let t = setInterval(function() {
+    $(window).trigger('resize.px.parallax');
+}, 100);
+
 // $('#partners-slider').owlCarousel({
 //     loop: true,
 //     autoplay: true,
@@ -423,4 +428,6 @@ $window.trigger('scroll');
     }
 })(jQuery);
 
-$('.countdown').final_countdown();
+$(document).ready(function() {
+    $('.countdown').final_countdown();
+});
