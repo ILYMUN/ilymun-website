@@ -21,6 +21,7 @@ const getClientEnvironment = require('./env');
 const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
 const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin-alt');
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
+const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
 
 
 // Webpack uses `publicPath` to determine where the app is being served from.
@@ -447,6 +448,22 @@ module.exports = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
     }),
+    new AddAssetHtmlPlugin([
+      { filepath: require.resolve("../src//wp-content/themes/ilymun-wp-theme/js/revolution/jquery.themepunch.tools.min.js") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/js/revolution/jquery.themepunch.revolution.min.js") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/js/revolution/extensions/revolution.extension.actions.min.js") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/js/revolution/extensions/revolution.extension.carousel.min.js") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/js/revolution/extensions/revolution.extension.kenburn.min.js") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/js/revolution/extensions/revolution.extension.layeranimation.min.js") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/js/revolution/extensions/revolution.extension.migration.min.js") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/js/revolution/extensions/revolution.extension.navigation.min.js") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/js/revolution/extensions/revolution.extension.parallax.min.js") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/js/revolution/extensions/revolution.extension.slideanims.min.js") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/js/revolution/extensions/revolution.extension.video.min.js") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/css/revolution/settings.css") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/css/revolution/layers.css") },
+      { filepath: require.resolve("../src/wp-content/themes/ilymun-wp-theme/css/revolution/navigation.css") }
+    ]),
     // Inlines the webpack runtime script. This script is too small to warrant
     // a network request.
     shouldInlineRuntimeChunk &&

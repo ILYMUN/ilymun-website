@@ -1,3 +1,6 @@
+@import url("http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
 /*-----------------------------------------------------------------------------
 
 - Revolution Slider 5.0 Navigatin Skin Style  -
@@ -812,7 +815,8 @@ website:    http://www.themepunch.com
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: "Roboto Slab" margin-bottom:5px;
+    font-family: "Roboto Slab";
+    margin-bottom:5px;
 }
 
 .erinyen .tp-tab-desc {
@@ -1509,7 +1513,8 @@ website:    http://www.themepunch.com
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
-    font-family: "Roboto Slab" margin-bottom:5px;
+    font-family: "Roboto Slab";
+    margin-bottom:5px;
 }
 
 .hebe .tp-tab-desc {
@@ -2349,7 +2354,7 @@ website:    http://www.themepunch.com
     position: absolute;
     width: 100%;
     height: 100%;
-    background: #transparent;
+    background: transparent;
     padding: 10px;
     margin-left: -10px;
     margin-top: -10px;

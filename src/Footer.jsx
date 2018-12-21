@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { faChevronUp, faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import './Footer.css';
 
 export class Footer extends Component {
@@ -7,16 +10,21 @@ export class Footer extends Component {
       <footer id="footer-section">
         <div id="scroll-to-top">
           <i class="fa fa-chevron-up"></i>
+          {/* <FontAwesomeIcon icon={faChevronUp} /> */}
         </div>
         <div class="footer-section">
           {/* <!-- <div class="top-angle"></div> --> */}
           <div class="container">
             <div class="row sm-show" style={{marginTop: '-50px', marginBottom: '50px'}}>
               <div class="col-sm-6 col-xs-12 footer-phone">
-                <i class="fa fa-phone"></i> +33 6 12 34 56 78
+                <i class="fa fa-phone"></i>
+                {/* <FontAwesomeIcon icon={faPhone} /> */}
+                +33 6 12 34 56 78
               </div>
               <div class="col-sm-6 col-xs-12 footer-email">
-                <i class="fa fa-envelope"></i> ilymun.csi.isl@gmail.com
+                <i class="fa fa-envelope"></i>
+                {/* <FontAwesomeIcon icon={faEnvelope} /> */}
+                ilymun.csi.isl@gmail.com
               </div>
             </div>
             <div class="row">

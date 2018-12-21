@@ -1,16 +1,38 @@
 import React, { Component } from 'react';
 import './App.css';
 import './Navbar.css';
+import $ from 'jquery';
 
 export class Navbar extends Component {
   resize = () => this.forceUpdate()
 
   componentDidMount() {
-    window.addEventListener('resize', this.resize)
+    window.addEventListener('resize', this.resize);
+
+    if (this.props.landing) {
+      // Navbar change on scroll
+      $(document).on('scroll', function() {
+        // $('.navbar').css('background-color', 'rgba(255,255,255,'+($(document).scrollTop() / 500) +')');
+        let scrollPosition = $(this).scrollTop();
+        if (scrollPosition >= $('.upper-navbar').height()) {
+            $('.navbar').removeClass('navbar-static-top');
+            $('.navbar').addClass('navbar-fixed-top');
+            $('.navbar').addClass('navbar-sm');
+            if ($(window).width() < 992) {
+                // http://www.virtuosoft.eu/code/bootstrap-autohidingnavbar/
+                $(".navbar").autoHidingNavbar();
+            }
+        } else {
+            $('.navbar').removeClass('navbar-fixed-top');
+            $('.navbar').addClass('navbar-static-top');
+            $('.navbar').removeClass('navbar-sm');
+        }
+      });
+    }
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.resize)
+    window.removeEventListener('resize', this.resize);
   }
 
   render() {
