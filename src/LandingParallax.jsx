@@ -4,7 +4,7 @@ export class LandingParallax extends Component {
   render() {
     const parallax = 
       <section class="parallax">
-        <div class="parallax-window dotted-overlay" data-parallax="scroll" data-image-src="./wp-content/themes/ilymun-wp-theme/images/parallax/01.jpg">
+        <div class="parallax-window dotted-overlay" data-parallax="scroll" data-image-src={require("./wp-content/themes/ilymun-wp-theme/images/parallax/01.jpg")}>
           <div class="container">
             <div class="content">
               <h3>By Students for Students</h3>

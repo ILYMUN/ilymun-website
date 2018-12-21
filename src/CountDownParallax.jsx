@@ -6,7 +6,7 @@ export class CountDownParallax extends Component {
 
     const countdown =
       <section class="parallax count-down">
-        <div class="parallax-window dotted-overlay" data-parallax="scroll" data-image-src="./wp-content/themes/ilymun-wp-theme/images/parallax/count-down.jpg">
+        <div class="parallax-window dotted-overlay" data-parallax="scroll" data-image-src={require("./wp-content/themes/ilymun-wp-theme/images/parallax/count-down.jpg")}>
           <div class="container" style={{marginTop: '100px'}}>
             <div class="content">
               <h3>Time Until Next Event</h3>
