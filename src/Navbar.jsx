@@ -31,7 +31,6 @@ export class Navbar extends Component {
     if (this.props.landing) {
       // $('.navbar').css('background-color', 'rgba(255,255,255,'+($(document).scrollTop() / 500) +')');
       let scrollPosition = $(document).scrollTop();
-      console.log("scrollPosition ::", scrollPosition);
       if (scrollPosition >= $('.upper-navbar').height()) {
           $('.navbar').removeClass('navbar-static-top');
           $('.navbar').addClass('navbar-fixed-top');
