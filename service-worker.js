@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ilymun-website/precache-manifest.791403c3d2ba769f0d8d37184fb05afe.js"
+  "/ilymun-website/precache-manifest.e343b27bbbc73a82afffcf26cea65e17.js"
 );
 
 workbox.clientsClaim();
