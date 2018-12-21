@@ -3,6 +3,7 @@ import { Link, Route, Switch } from 'react-router-dom';
 
 import {Home} from './Home';
 import {About} from './About';
+import {NotFound} from './NotFound';
 
 /* CSS Files */
 import './wp-content/themes/ilymun-wp-theme/css/bootstrap.min.css';
@@ -20,12 +21,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {/* Route components are rendered if the path prop matches the current URL */}
-        <Route exact path="/" component={Home}/>
-        {/* <Route path="/category" component={Category}/> */}
-        <Route path="/about" component={About}/>
-        <Route component={() => (<div>404 Not found </div>)} />
-        {/* <Route path="/alt" render = {()=> (<p> I want this text to show up for all routes other than '/', '/products' and '/category' </p>)}/> */}
+        <Switch>
+          {/* Route components are rendered if the path prop matches the current URL */}
+          <Route exact path="/" component={Home}/>
+          <Route path="/about" component={About}/>
+          <Route component={ NotFound } />
+        </Switch>
       </div>
     );
   }
