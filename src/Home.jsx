@@ -14,6 +14,12 @@ import {Navbar} from './Navbar.jsx';
 import {Footer} from './Footer.jsx';
 
 export class Home extends Component {
+  componentDidMount() {
+    // Makes sure that when a plainPage is mounted for the first time through 
+    // a router it scrolls to the top.
+    window.scrollTo(0, 0);
+  }
+  
   render () {
     const home = 
       <div id="home">

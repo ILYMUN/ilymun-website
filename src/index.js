@@ -23,7 +23,7 @@ import './application.js';
 // import "./wp-content/themes/ilymun-wp-theme/js/revolution/extensions/revolution.extension.video.min.js";
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter onUpdate={() => window.scrollTo(0, 0)} basename={process.env.PUBLIC_URL}>
     <App />
   </BrowserRouter>, 
   document.getElementById('root'));

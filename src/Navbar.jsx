@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import './App.css';
 import './Navbar.css';
 import $ from 'jquery';
+// import './wp-content/themes/ilymun-wp-theme/js/jquery.bootstrap-autohidingnavbar.min.js';
 
 export class Navbar extends Component {
   resize = () => this.forceUpdate();
@@ -38,7 +39,7 @@ export class Navbar extends Component {
           $('.navbar').addClass('navbar-sm');
           if ($(window).width() < 992) {
               // http://www.virtuosoft.eu/code/bootstrap-autohidingnavbar/
-              $(".navbar").autoHidingNavbar();
+              // $(".navbar").autoHidingNavbar();
           }
       } else {
           $('.navbar').removeClass('navbar-fixed-top');
