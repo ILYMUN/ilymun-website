@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
-import $ from 'jquery';
+import RevSlider, { Slide, Caption } from 'react-rev-slider';
 
 export class LandingSlider extends Component {
-  render () {
+  render() {
     const LandingSlider = 
       <section id="main-slider">
         <article class="content">
