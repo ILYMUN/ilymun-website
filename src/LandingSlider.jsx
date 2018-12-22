@@ -2,10 +2,6 @@ import React, {Component} from 'react';
 import $ from 'jquery';
 
 export class LandingSlider extends Component {
-  componentDidMount() {
-    
-  }
-
   render () {
     const LandingSlider = 
       <section id="main-slider">

@@ -1,3 +1,6 @@
+import $, {jQuery} from 'jquery';
+import Kinetic from './kinetic-v5.1.0.min.js';
+
 // Start carousel
 $(document).ready(function() {
     $("#people-slider").owlCarousel({
@@ -15,6 +18,11 @@ $(document).ready(function() {
         $("#people-slider").trigger('to.owl.carousel', [$(this).attr('goto'), 500]);
     });
 });
+
+
+let t = setInterval(function() {
+    $(window).trigger('resize.px.parallax');
+}, 100);
 
 // $('#partners-slider').owlCarousel({
 //     loop: true,
@@ -233,7 +241,7 @@ $window.trigger('scroll');
         $(window).load(updateCircles);
 
         $(window).on('redraw', function() {
-            switched = false;
+            let switched = false;
             updateCircles();
         });
         $(window).on('resize', updateCircles);
@@ -423,4 +431,6 @@ $window.trigger('scroll');
     }
 })(jQuery);
 
-$('.countdown').final_countdown();
+$(document).ready(function() {
+    $('.countdown').final_countdown();
+});

@@ -51,10 +51,9 @@
 
   <script>
     function waitForElementToDisplay(selector, time) {
-        if(document.querySelector(selector)!=null) {
+        if(document.querySelector(selector) != null) {
             // The element is displayed
             if ($("#rev_slider_20_1").revolution == undefined) {
-                alert("HERE!");
                 revslider_showDoubleJqueryError("#rev_slider_20_1");
             } else {
                 $("#rev_slider_20_1").show().revolution({
@@ -89,15 +88,18 @@
                 }
                 });
             }
-            return;
-        } else {
-            setTimeout(function() {
-                waitForElementToDisplay(selector, time);
-            }, time);
+
         }
+
+        // setTimeout(function() {
+        //     waitForElementToDisplay(selector, time);
+        // }, time);
     }
 
-    waitForElementToDisplay("#rev_slider_20_1", 100);
+    $(document).ready(function() {
+        waitForElementToDisplay("#rev_slider_20_1", 100);
+    });
+    
   </script>
 
 <!-- CONTACT US -->
@@ -131,7 +133,7 @@
 
       <script type="text/javascript">
           // When the window has finished loading create our google map below
-          google.maps.event.addDomListener(window, 'load', init);
+          google.maps.event.addDomListener(window, 'load', loadMap);
 
           function init() {
               // Basic options for a simple Google Map
@@ -344,12 +346,33 @@
               // map.disableDefaultUI: true;
 
           }
+
+            function loadMap() {
+                if ($("#map").children().length == 0) {
+                    init();
+                }
+                // setTimeout(function() {
+                //     loadMap();
+                // }, 100);
+            }
       </script>
 
-      <script type="text/javascript" src="/wp-content/themes/ilymun-wp-theme/js/owl.carousel.min.js"></script>
-      <script type="text/javascript" src="/wp-content/themes/ilymun-wp-theme/js/parallax.min.js"></script>
-      <script type="text/javascript" src="/wp-content/themes/ilymun-wp-theme/js/landing/kinetic-v5.1.0.min.js"></script>
-      <script type="text/javascript" src="/wp-content/themes/ilymun-wp-theme/js/landing/functions.js"></script>
+      <!-- <script type="text/javascript" src="/wp-content/themes/ilymun-wp-theme/js/owl.carousel.min.js"></script> -->
+      <!-- <script type="text/javascript" src="/wp-content/themes/ilymun-wp-theme/js/parallax.min.js"></script> -->
+      <!-- <script type="text/javascript" src="/wp-content/themes/ilymun-wp-theme/js/landing/kinetic-v5.1.0.min.js"></script> -->
+      <!-- <script type="text/javascript" src="/wp-content/themes/ilymun-wp-theme/js/landing/functions.js"></script> -->
+      <!-- <script>
+        function loadParallax() {
+            $('.parallax-window').parallax();
+            setTimeout(function() {
+                loadParallax();
+            }, 100);
+        }
+
+        // $(document).ready(function() {
+            loadParallax();
+        // });
+      </script> -->
 
   <style media="screen">
       #footer-section a {

@@ -85,7 +85,7 @@ export class Navbar extends Component {
               <i class="fa fa-bars"></i>
             </button>
             {/* <!-- TODO: Make Logo Pop-out on hover to let people know it is clickable --> */}
-            <Link to="/"><a class="navbar-brand"><img src="/wp-content/themes/ilymun-wp-theme/images/logo.png" alt="" /></a></Link>
+            <Link to="/"><a class="navbar-brand" href="/"><img src={require("./wp-content/themes/ilymun-wp-theme/images/logo.png")} alt="" /></a></Link>
           </div>
 
           <div id="navbar" class="navbar-collapse collapse">

@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import ScriptTag from 'react-script-tag';
+
 import {LandingSlider} from './LandingSlider';
 import {LandingAbout} from './LandingAbout';
 import {LandingParallax} from './LandingParallax';
@@ -14,12 +16,40 @@ import {Navbar} from './Navbar.jsx';
 import {Footer} from './Footer.jsx';
 
 export class Home extends Component {
+
+  constructor(props) {
+    super(props)
+    this.loadedScripts = [];
+
+    console.log(this.props.location);
+  }
+
+  loadScript(src) {
+    const script = document.createElement("script");
+    script.src = src; //+ '?cachebuster='+ new Date().getTime();
+    script.async = false;
+    this.loadedScripts.push(script);
+    document.body.appendChild(script);
+  }
+
   componentDidMount() {
     // Makes sure that when a plainPage is mounted for the first time through 
     // a router it scrolls to the top.
     window.scrollTo(0, 0);
+
+    this.loadScript("./wp-content/themes/ilymun-wp-theme/js/parallax.min.js");
+    this.loadScript("./wp-content/themes/ilymun-wp-theme/js/landing/kinetic-v5.1.0.min.js");
+    this.loadScript("./wp-content/themes/ilymun-wp-theme/js/landing/functions.js");
   }
-  
+
+  componentWillUnmount() {
+    for (let script of this.loadedScripts) {
+      document.body.removeChild(script);
+    }
+
+    this.loadedScripts = [];
+  }
+
   render () {
     const home = 
       <div id="home">
@@ -39,6 +69,10 @@ export class Home extends Component {
           <section id="map" style={{width: '100%', height: '500px'}}></section>
         </div>
         <Footer />
+        {/* <ScriptTag type="text/javascript" src={require("./wp-content/themes/ilymun-wp-theme/js/owl.carousel.min.js")} /> */}
+        {/* <ScriptTag type="text/javascript" src={require("./wp-content/themes/ilymun-wp-theme/js/parallax.min.js")} /> */}
+        {/* <ScriptTag type="text/javascript" src={require("./wp-content/themes/ilymun-wp-theme/js/landing/kinetic-v5.1.0.min.js")} /> */}
+        {/* <ScriptTag type="text/javascript" src={require("./wp-content/themes/ilymun-wp-theme/js/landing/functions.js")} /> */}
       </div>
 
     return home;
