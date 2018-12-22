@@ -8,10 +8,10 @@ export class Footer extends Component {
   render () {
     const footer =
       <footer id="footer-section">
-        <div id="scroll-to-top">
+        {/* <div id="scroll-to-top">
           <i class="fa fa-chevron-up"></i>
-          {/* <FontAwesomeIcon icon={faChevronUp} /> */}
-        </div>
+          <FontAwesomeIcon icon={faChevronUp} />
+        </div> */}
         <div class="footer-section">
           {/* <!-- <div class="top-angle"></div> --> */}
           <div class="container">
