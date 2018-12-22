@@ -27,6 +27,8 @@ import "./wp-content/themes/ilymun-wp-theme/css/revolution/settings.css";
 import "./wp-content/themes/ilymun-wp-theme/css/revolution/layers.css";
 import "./wp-content/themes/ilymun-wp-theme/css/revolution/navigation.css";
 
+import "./animate.css";
+
 class App extends Component {
   render() {
     return (

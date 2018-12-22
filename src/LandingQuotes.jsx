@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -15,7 +16,8 @@ export class LandingQuotes extends Component {
           <div class="top-angle"></div>
             <div class="container">
               <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12"> {/*TODO: Add back: appear bounce-up*/}
+              <ScrollAnimation animateIn="bounceInUp" animateOnce>
+              <div class="col-md-12 col-sm-12 col-xs-12">
                 <h2 class="lg-title text-center"><span>What People Say about ILYMUN?</span></h2>
 
                 <OwlCarousel
@@ -55,6 +57,7 @@ export class LandingQuotes extends Component {
                   <i class="fa fa-circle owl-dot" goto="4"></i>
                 </div> */}
               </div>
+              </ScrollAnimation>
               </div>
               <div class="section-content">
 

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import LazyLoad from 'react-lazyload';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 export class LandingAbout extends Component {
   constructor(props) {
@@ -18,21 +19,26 @@ export class LandingAbout extends Component {
               <div class="white-bg angular section-padding">
                   <div class="top-angle"></div>
                   <div class="container">
-                      <div class="section-head"> {/* TODO ADD BACK: appear slide-right*/}
+                    <ScrollAnimation animateIn="slideInRight" animateOnce>
+                      <div class="section-head">
                           <h2 class="section-title">About</h2>
                           <p class="section-description">
                               Ilymun, (International Lyon Model United Nations), is a three-day conference, organized by students in Lyon for students from around the world. </p>
                       </div>
+                    </ScrollAnimation>
                       <div class="section-content">
                           <div class="row">
-                              <div class="media-content col-md-5 col-sm-5"> {/* TODO ADD BACK: appear bounce-up*/}
+                          <ScrollAnimation animateIn="bounceInUp" animateOnce>
+                              <div class="media-content col-md-5 col-sm-5">
                                   <div class="double-frame">
                                     <LazyLoad>
                                       <img src={require('./images/about.jpg')} />
                                     </LazyLoad>
                                   </div>
                               </div>
-                              <div class="content-box col-md-7 col-sm-7"> {/* TODO ADD BACK: appear bounce-up*/}
+                            </ScrollAnimation>
+                            <ScrollAnimation animateIn="bounceInUp" animateOnce>
+                              <div class="content-box col-md-7 col-sm-7">
                                   <div class="hex content-icon-hex pull-left">
                                       <div class="content-icon">
                                           <span aria-hidden="true" class="li_bulb"></span>
@@ -57,6 +63,7 @@ export class LandingAbout extends Component {
                                   </div>
                                   
                               </div>
+                            </ScrollAnimation>
                           </div>
                       </div>
                   </div>
