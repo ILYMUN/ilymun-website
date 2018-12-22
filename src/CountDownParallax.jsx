@@ -6,7 +6,7 @@ export class CountDownParallax extends Component {
     const eventTime = Date.UTC(2019, 1, 24, 1, 0, 0) / 1000;
 
     const countdown =
-      <section class="parallax count-down" style={{marginTop: '50px'}}>
+      <section class="parallax count-down" style={{marginTop: '25px'}}>
         <div class="top-angle" style={{
           height: "150px",
           position: "absolute",
