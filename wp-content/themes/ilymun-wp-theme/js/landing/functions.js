@@ -1,23 +1,25 @@
+// alert("LOADED!");
+
 // Start carousel
-$(document).ready(function() {
-    $("#people-slider").owlCarousel({
-        items: 1,
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 6000,
-        autoplayHoverPause: true,
-        autoHeight: true,
-        animateOut: 'fadeOut',
-        dotsContainer: '#customDots'
-    });
-    $('.owl-dot').click(function() {
-        $("#people-slider").trigger('to.owl.carousel', [$(this).attr('goto'), 500]);
-    });
-});
+// $(document).ready(function() {
+//     $("#people-slider").owlCarousel({
+//         items: 1,
+//         loop: true,
+//         margin: 10,
+//         autoplay: true,
+//         autoplayTimeout: 6000,
+//         autoplayHoverPause: true,
+//         autoHeight: true,
+//         animateOut: 'fadeOut',
+//         dotsContainer: '#customDots'
+//     });
+//     $('.owl-dot').click(function() {
+//         $("#people-slider").trigger('to.owl.carousel', [$(this).attr('goto'), 500]);
+//     });
+// });
 
 
-let t = setInterval(function() {
+t = setInterval(function() {
     $(window).trigger('resize.px.parallax');
 }, 100);
 
