@@ -130,8 +130,8 @@ export class Navbar extends Component {
               <li><Link to="/other-muns/">Other MUNs</Link></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a class="scroll" href="/#contact-us">Contact Us</a></li>
-              <li><a href="/fund/">Help Fund</a></li>
+              {/* <li><Link to Con><a class="scroll" href="/#contact-us">Contact Us</a></Link></li> */}
+              <li><Link to="/fund">Help Fund</Link></li>
             </ul>
           </div>
         </div>

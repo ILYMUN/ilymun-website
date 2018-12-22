@@ -13,6 +13,8 @@ import {HowToDress} from './HowToDress';
 
 import {OtherMUNs} from './OtherMUNs';
 
+import {Fund} from './Fund';
+
 import {NotFound} from './NotFound';
 
 /* CSS Files */
@@ -43,6 +45,7 @@ class App extends Component {
           <Route path="/debate-help" component={HowToDebate}/>
           <Route path="/dress" component={HowToDress}/>
           <Route path="/other-muns" component={OtherMUNs}/>
+          <Route path="/fund" component={Fund}/>
           <Route component={ NotFound } />
         </Switch>
       </div>
