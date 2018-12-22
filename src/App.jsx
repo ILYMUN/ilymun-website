@@ -2,10 +2,17 @@ import React, { Component } from 'react';
 import { Link, Route, Switch } from 'react-router-dom';
 
 import {Home} from './Home';
+
 import {About} from './About';
 import {Committees} from './Committees';
 import {ActionAssembly} from './ActionAssembly';
 import {InternationalCourtOfJustice} from './InternationalCourtOfJustice';
+
+import {HowToDebate} from './HowToDebate';
+import {HowToDress} from './HowToDress';
+
+import {OtherMUNs} from './OtherMUNs';
+
 import {NotFound} from './NotFound';
 
 /* CSS Files */
@@ -31,6 +38,9 @@ class App extends Component {
           <Route path="/committees" component={Committees}/>
           <Route path="/action-assembly" component={ActionAssembly}/>
           <Route path="/international-court-of-justice" component={InternationalCourtOfJustice}/>
+          <Route path="/debate-help" component={HowToDebate}/>
+          <Route path="/dress" component={HowToDress}/>
+          <Route path="/other-muns" component={OtherMUNs}/>
           <Route component={ NotFound } />
         </Switch>
       </div>

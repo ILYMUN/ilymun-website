@@ -106,8 +106,8 @@ export class Navbar extends Component {
                 <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Ready <span class="caret"></span></a>
                 <ul class="dropdown-menu">
                   {/* <!--<li><a href="/country-fact-sheets">Country Fact Sheets</a></li>--> */}
-                  <li><a href="/debate-help/">How to Act & Debate</a></li>
-                  <li><a href="/dress/">How to Dress</a></li>
+                  <li><Link to="/debate-help/">How to Act & Debate</Link></li>
+                  <li><Link to="/dress/">How to Dress</Link></li>
                   {/* <!--<li><a href="/social-events">Social Events</a></li>--> */}
                 </ul>
               </li>
@@ -117,16 +117,17 @@ export class Navbar extends Component {
                   <li><a href="https://medium.com/ilymun">Articles</a></li>
                   <li><a href="https://www.facebook.com/pg/internationallyonmun/photos/">Gallery</a></li>
                   <li><a href="https://www.youtube.com/channel/UCFmcIYRifCNmHt9sjoWUDsA">Videos</a></li>
-                  <li><a href="/school-photos/">School Photos</a></li>
+                  {/* <li><a href="/school-photos/">School Photos</a></li> */}
                 </ul>
               </li>
-              <li class="dropdown">
+              {/* <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Partners<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                  <li><a href="/partners/">Partners</a></li>
-                  <li><a href="/other-muns/">Other MUNs</a></li>
+                  <li><Link href="/partners/">Partners</Link></li>
+                  <li><Link href="/other-muns/">Other MUNs</Link></li>
                 </ul>
-              </li>
+              </li> */}
+              <li><Link to="/other-muns/">Other MUNs</Link></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a class="scroll" href="/#contact-us">Contact Us</a></li>
