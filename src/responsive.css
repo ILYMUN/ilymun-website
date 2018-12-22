@@ -75,10 +75,10 @@
 	#scroll-to-top{
 		visibility: hidden;
 	}
-	#footer-section{
+	/* #footer-section{
 		text-align: center;
 		margin-top: -100px;
-	}
+	} */
 	.footer-social-btn{
 		padding-bottom: 15px;
 	}
@@ -103,9 +103,9 @@
 		content: none;
 	}
 	/*Little Tweaks*/
-	#footer-section{
+	/* #footer-section{
 		margin-top: -100px;
-	}
+	} */
 	#footer-section .footer-phone-email{
 		float: left;
 	}
