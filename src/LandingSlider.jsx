@@ -1,7 +1,63 @@
 import React, {Component} from 'react';
+import $ from 'jquery';
 import RevSlider, { Slide, Caption } from 'react-rev-slider';
 
 export class LandingSlider extends Component {
+
+  constructor(props) {
+    super(props)
+    this.script = undefined;
+  }
+
+  componentDidMount() {
+    const script = 
+      'if ($("#rev_slider_20_1").revolution == undefined) {' +
+        'revslider_showDoubleJqueryError("#rev_slider_20_1");' +
+      '} else {' +
+        '$("#rev_slider_20_1").show().revolution({' +
+          'sliderType: "hero",' +
+          'jsFileLocation: "../../revolution/js/",' +
+          ' sliderLayout: "fullwidth",' +
+          'dottedOverlay: "none",' +
+          'delay: 9000,' +
+          'navigation: {},' +
+          'responsiveLevels: [1240, 1024, 778, 480],' +
+          'gridwidth: [1240, 1024, 778, 480],' +
+          'gridheight: [920, 700, 500, 500],' +
+          'lazyType: "none",' +
+          'parallax: {' +
+            'type: "mouse",' +
+            'origo: "slidercenter",' +
+            'speed: 2000,' +
+            'levels: [2, 3, 4, 5, 6, 7, 12, 16, 10, 50],' +
+            '},' +
+            'shadow: 0,' +
+            'spinner: "off",' +
+            'autoHeight: "off",' +
+          'disableProgressBar: "on",' +
+          'hideThumbsOnMobile: "off",' +
+          'hideSliderAtLimit: 0,' +
+          'hideCaptionAtLimit: 0,' +
+          'hideAllCaptionAtLilmit: 0,' +
+          'debugMode: false,' +
+          'fallbacks: {' +
+          'simplifyAll: "off",' +
+              'disableFocusListener: false,' +
+              '}' +
+          '});' +
+        '}'
+
+    let script_tag = document.createElement('script');
+    script_tag.type = 'text/javascript';
+    script_tag.text = script;
+    this.script = script_tag;
+    document.body.appendChild(script_tag);
+  }
+
+  componentWillUnmount() {
+    document.body.removeChild(this.script);
+  }
+
   render() {
     const LandingSlider = 
       <section id="main-slider">

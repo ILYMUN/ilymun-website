@@ -2,21 +2,6 @@ import React, {Component} from 'react';
 import { Parallax, Background } from 'react-parallax';
 
 export class LandingParallax extends Component {
-
-//   <section class="parallax">
-//     <div class="parallax-window dotted-overlay" data-parallax="scroll" data-image-src="/static/media/01.79d2af56.jpg">
-//         <div class="container">
-//             <div class="content">
-//                 <h3>By Students for Students</h3>
-//                 <div class="quote">
-//                     <br>
-//                     <p>We believe that to truly appeal to students’ minds and hearts, the ideas, planning, and execution of the conference must sprout from students.</p>
-//                 </div>
-//             </div>
-//         </div>
-//     </div>
-// </section>
-
   render() {
     const parallax = 
       <section class="parallax">
