@@ -11,6 +11,7 @@ import {LandingQuotes} from './LandingQuotes';
 import {LandingPress} from './LandingPress';
 import {LandingPartners} from './LandingPartners';
 import {Contact} from './Contact';
+import {Map} from './Map';
 
 import {Navbar} from './Navbar.jsx';
 import {Footer} from './Footer.jsx';
@@ -64,7 +65,8 @@ export class Home extends Component {
           <LandingPress />
           <LandingPartners />
           <Contact />
-          <section id="map" style={{width: '100%', height: '500px'}}></section>
+          {/* <section id="map" style={{width: '100%', height: '500px'}}></section> */}
+          <Map />
         </div>
         <Footer />
         {/* <ScriptTag type="text/javascript" src={require("./wp-content/themes/ilymun-wp-theme/js/owl.carousel.min.js")} /> */}
