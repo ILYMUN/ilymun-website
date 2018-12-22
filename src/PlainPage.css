@@ -11,6 +11,9 @@
   font-family: 'Lato', sans-serif;
   font-weight: bold;
 }
-.plainPage li {
+.plainPage #content li {
   margin-bottom: 10px;
+}
+.plainPage #content a {
+  text-decoration: underline;
 }

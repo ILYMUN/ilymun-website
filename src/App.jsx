@@ -3,6 +3,9 @@ import { Link, Route, Switch } from 'react-router-dom';
 
 import {Home} from './Home';
 import {About} from './About';
+import {Committees} from './Committees';
+import {ActionAssembly} from './ActionAssembly';
+import {InternationalCourtOfJustice} from './InternationalCourtOfJustice';
 import {NotFound} from './NotFound';
 
 /* CSS Files */
@@ -25,6 +28,9 @@ class App extends Component {
           {/* Route components are rendered if the path prop matches the current URL */}
           <Route exact path="/" component={Home}/>
           <Route path="/about" component={About}/>
+          <Route path="/committees" component={Committees}/>
+          <Route path="/action-assembly" component={ActionAssembly}/>
+          <Route path="/international-court-of-justice" component={InternationalCourtOfJustice}/>
           <Route component={ NotFound } />
         </Switch>
       </div>

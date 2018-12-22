@@ -18,7 +18,7 @@ export class PlainPage extends Component {
       <div class="plainPage">
         <Navbar/>
 
-        <div class="container" style={{marginBottom: '100px'}}>
+        <div id="content" class="container" style={{marginBottom: '100px'}}>
           {title}
           {this.props.children}
         </div>
