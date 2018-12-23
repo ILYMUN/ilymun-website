@@ -13,7 +13,7 @@ export class Committees extends Component {
                 <div class="col-md-4">
                     <h3>General Assembly</h3>
                     <ul>
-                        <li>Issue to be determined</li>
+                        <li><a href="https://docs.google.com/document/d/1qkUgtF8VtI-1rtgB1ZAuAVdSUOHjYUrFGgHNi0uC324/edit?usp=sharing">The Respect of the Fundamental Rights endowed to all by the charter of the United Nations</a></li>
                     </ul>
                 </div>
             </div>
@@ -21,23 +21,23 @@ export class Committees extends Component {
                 <div class="col-md-4">
                     <h3>Security Council</h3>
                     <ul>
-                        <li>The issue of the Rohingya people</li>
-                        <li>Working towards a unified Bosnia Herzegovina</li>
-                        <li>The right of nations to have nuclear arms</li>
+                        <li><a href="https://docs.google.com/document/d/1JXxAY4CA24UUkkP_GXeS0xmZeEOyUQis8b0RZzABVFI/edit?usp=sharing">The issue of the Rohingya people</a></li>
+                        <li><a href="https://docs.google.com/document/d/1Bk0rYlO2twnUMtdF4O-LP50TsrBkdgufrcv7KnGXTNI/edit?usp=sharing">Working towards a unified Bosnia Herzegovina</a></li>
+                        <li><a href="https://docs.google.com/document/d/18hupxkrwzHScvhqzwxk6pJdrg2ELnQgUEOkJOt5GL60/edit?usp=sharing">The right of nations to have nuclear arms</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h3>Historical Security Council</h3>
                     <ul>
-                        <li>The recognition of the state of Israel and its membership in the UN; May 1948</li>
-                        <li>Drafting the Nuclear Non Proliferation Treaty; August 25, 1967</li>
-                        <li>Rwandan genocide; April 30, 1994</li>
+                        <li><a href="https://docs.google.com/document/d/15jSnRJdVmLW6Q8G2gXQFsNLZLSbSuR24yyJyMUlvWyA/edit?usp=sharing">The recognition of the state of Israel and its membership in the UN; May 1948</a></li>
+                        <li><a href="https://docs.google.com/document/d/103B3qeFI_Cpgl5duP-LEMJUmqqx-asGS-ME7fEEZVfw/edit?usp=sharing">Drafting the Nuclear Non Proliferation Treaty; August 25, 1967</a></li>
+                        <li><a href="https://docs.google.com/document/d/1QWu3Mve1AM5KwXo44uzsrLrHTZXMFOL647kCM5ReBVg/edit?usp=sharing">Rwandan genocide; April 30, 1994</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h3>Territorial</h3>
                     <ul>
-                        <li>Sharing global resources</li>
+                        <li><a href="https://drive.google.com/drive/folders/1vx2_SiD5jDIl4q8egVI6O8CQevIKeovu?usp=sharing">Sharing global resources</a></li>
                     </ul>
                     <p><i>This committee will work towards the creation of multiple resolutions regarding specific resources (water, minerals, forests, oil, etc.)</i></p>
                 </div>
@@ -46,22 +46,22 @@ export class Committees extends Component {
                 <div class="col-md-4">
                     <h3>Environmental</h3>
                     <ul>
-                        <li>The pollution “market”</li>
-                        <li>Sustainable development: a balance between economic growth and the protection of natural resources and ecosystems</li>
+                        <li><a href="https://docs.google.com/document/d/1U8cf6xz2wrHoDLiY8RCxvKtesgxBw9eI53Ca6z-z_78/edit?usp=sharing">The pollution “market”</a></li>
+                        <li><a href="https://docs.google.com/document/d/1FqmpqxPqeKCTYneaEkjQO2JwNzcrBfn3UKF3yaVv1uI/edit?usp=sharing">Sustainable development: a balance between economic growth and the protection of natural resources and ecosystems</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h3>Economic</h3>
                     <ul>
-                        <li>Equality in the workplace</li>
-                        <li>Reducing poverty as a step towards equity</li>
+                        <li><a href="https://docs.google.com/document/d/1LemTIRZi04H3lZ_wmLfVXPOHycZmEOtQj_7mRtiz_N4/edit?usp=sharing">Equality in the workplace</a></li>
+                        <li><a href="https://docs.google.com/document/d/1V_1XyON8PeQRiLjGuj6oF7g5cxVBwQnL6e0n2Cvu_NI/edit?usp=sharing">Reducing poverty as a step towards equity</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h3>Social</h3>
                     <ul>
-                        <li>Reducing discrimination</li>
-                        <li>Universal healthcare</li>
+                        <li><a href="https://docs.google.com/document/d/1gB_iBYlp2Y94Hb7GCLz-xiD0EapQeOuoBcQJowRXry4/edit?usp=sharing">Reducing discrimination</a></li>
+                        <li><a href="https://docs.google.com/document/d/1NppMAPJd3eL2EJZyIi_hrcJGylNP4mGPMQYF4ygaaL0/edit?usp=sharing">Universal healthcare</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,38 +69,39 @@ export class Committees extends Component {
                 <div class="col-md-4">
                     <h3>Human Rights</h3>
                     <ul>
-                        <li>Police brutality and discrimination of minorities</li>
-                        <li>The protection and the rights of migrants</li>
+                        <li><a href="https://docs.google.com/document/d/15cjGASjC7M3KYvXZpdfN7TuideWbrrqNoFstYLZ1e8g/edit?usp=sharing">Police brutality and discrimination of minorities</a></li>
+                        <li><a href="https://docs.google.com/document/d/1aeWUQiIxcmpIqkjvQdKMje5wDA689QazK14q_IgEbpE/edit?usp=sharing">The protection and the rights of migrants</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h3>Special Conference: Focus on Children</h3>
                     <ul>
-                        <li>Healthcare and mortality rates</li>
-                        <li>Protecting the rights of the child</li>
-                        <li>Education</li>
+                        <li><a href="https://docs.google.com/document/d/1WxAz5GyxWxopmVKHk4CrSZDzGBMgnxGYxg-wehL_H9o/edit?usp=sharing">Healthcare and mortality rates</a></li>
+                        <li><a href="https://docs.google.com/document/d/1F_TauSK7R69Atw3TLb9eVE7h92Uw2wafzVdDrK5ZDqU/edit?usp=sharing">Protecting the rights of the child</a></li>
+                        <li><a href="https://docs.google.com/document/d/1tZDIYwpEVeVViKR7CUm9tT2pMXNng1h0p3GK8jj1YvM/edit?usp=sharing">Education</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <h3>Action Assembly</h3>
                     <ul>
-                        <li>Engaging with NGOs</li>
-                        <li>Writing a charter for local action to reduce inequalities</li>
+                        <li><a href="https://drive.google.com/file/d/1vv7VzZJn6NxrkroLLDJklqCBCoMpU9lI/view?usp=sharing">Gender inequalities</a></li>
+                        <li><a href="https://drive.google.com/file/d/1gKMtw16cSMB8GVLk4zcqFfpEr0VeDzwT/view?usp=sharing">Unequal access to culture</a></li>
+                        <li><a href="https://drive.google.com/file/d/14HGBEwQ27aglY0XsY0taXj-CVV_4mZc8/view?usp=sharing">Unequal access to health</a></li>
                     </ul>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-4">
+                {/* <div class="col-md-4">
                     <h3>International Court of Justice</h3>
                     <ul>
                         <li>Violation of human rights: the Burmese government’s treatment of the Rohingya people</li>
                     </ul>
-                </div>
+                </div> */}
                 <div class="col-md-4">
                     <h3>Special Conference: Focus on Women</h3>
                     <ul>
-                        <li>Empowering women</li>
-                        <li>Reducing gender inequalities</li>
+                        <li><a href="https://docs.google.com/document/d/12yJnfdllyckCDxFvDEvetgzuKSxD6KZcpe5Tzgo5NuQ/edit?usp=sharing">Reducing gender inequalities</a></li>
+                        <li><a href="https://docs.google.com/document/d/1xmQUWaLW3abFrF_4Oe7sA0oCTSbe8elKDFYeTKuYBuc/edit?usp=sharing">Empowering women</a></li>
                     </ul>
                 </div>
             </div>
