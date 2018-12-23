@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "73f4f2ca0233f2010a30",
+    "revision": "67c8dbe8d8fd03392672",
     "url": "/ilymun-website/static/css/main.1c82607a.chunk.css"
   },
   {
-    "revision": "73f4f2ca0233f2010a30",
-    "url": "/ilymun-website/static/js/main.73f4f2ca.chunk.js"
+    "revision": "67c8dbe8d8fd03392672",
+    "url": "/ilymun-website/static/js/main.67c8dbe8.chunk.js"
   },
   {
     "revision": "16d49dea696288044359",
@@ -88,8 +88,8 @@ self.__precacheManifest = [
     "url": "/ilymun-website/static/media/ILYMUN-rules-and-procedure.781a8008.pdf"
   },
   {
-    "revision": "3c6dc06a97c2bbb0b9273d8148757c56",
-    "url": "/ilymun-website/static/media/dresscode.3c6dc06a.jpg"
+    "revision": "ab5d389e6bee68941a2c426e40acc0fd",
+    "url": "/ilymun-website/static/media/dresscode.ab5d389e.jpg"
   },
   {
     "revision": "082633bb107cd5e8e4c936ebdfd7e032",
@@ -148,7 +148,7 @@ self.__precacheManifest = [
     "url": "/ilymun-website/jquery.themepunch.tools.min.js"
   },
   {
-    "revision": "e85045b7db310bf9f16b03fbb686878b",
+    "revision": "706969357a781627adf83b4af6a02a4b",
     "url": "/ilymun-website/index.html"
   }
 ];
