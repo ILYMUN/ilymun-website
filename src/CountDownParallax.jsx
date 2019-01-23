@@ -3,7 +3,11 @@ import { Parallax, Background } from 'react-parallax';
 
 export class CountDownParallax extends Component {
   render() {
-    const eventTime = Date.UTC(2019, 1, 24, 1, 0, 0) / 1000;
+    /**
+      * UPDATE THIS TO SET THE EVENT START TIME FOR THE COUNTDOWN TO WORK
+      * See: https://www.geeksforgeeks.org/date-utc-javascript/ for information on Date.UTC()
+      */
+    const eventTime = Date.UTC(2019, 0, 24, 9, 0, 0) / 1000;
 
     const countdown =
       <section class="parallax count-down" style={{marginTop: '25px'}}>
